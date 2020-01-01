@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -43,6 +44,22 @@ public class PeopleAdapter extends ArrayAdapter<People> {
         TextView nameTextView = listItemView.findViewById(R.id.name);
 
         nameTextView.setText(currentPeople.getName());
+
+        ImageView imageView = listItemView.findViewById(R.id.people_image_view);
+
+        if(currentPeople.hasImage()){
+
+            imageView.setImageResource(currentPeople.getImageId());
+
+            imageView.setVisibility(View.VISIBLE);
+
+        } else {
+
+            imageView.setVisibility(View.GONE);
+
+        }
+
+
 
 
         TextView genderTextView = listItemView.findViewById(R.id.gender);

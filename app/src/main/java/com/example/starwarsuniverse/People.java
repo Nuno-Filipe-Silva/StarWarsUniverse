@@ -69,6 +69,11 @@ public class People implements Serializable {
     private String mUrl;
 
 
+    private static final int NO_IMAGE_PROVIDED = -1;
+
+    private int mImageId = NO_IMAGE_PROVIDED;
+
+
     public People(String name, String height, String mass, String hairColor, String skinColor,
                   String eyeColor, String birthYear, String gender, String homeworld,
                   ArrayList<String> films, ArrayList<String> speciesArrayList,
@@ -93,6 +98,35 @@ public class People implements Serializable {
         this.mEdited = edited;
         this.mUrl = url;
     }
+
+
+    public People(String name, String height, String mass, String hairColor, String skinColor,
+                  String eyeColor, String birthYear, String gender, String homeworld,
+                  ArrayList<String> films, ArrayList<String> speciesArrayList,
+                  ArrayList<String> vehiclesArrayList, ArrayList<String> starshipsArrayList,
+                  String created, String edited, String url, int imageId) {
+
+
+        this.mName = name;
+        this.mHeight = height;
+        this.mMass = mass;
+        this.mHairColor = hairColor;
+        this.mSkinColor = skinColor;
+        this.mEyeColor = eyeColor;
+        this.mBirthYear = birthYear;
+        this.mGender = gender;
+        this.mHomeworld = homeworld;
+        this.mFilms = films;
+        this.mSpeciesArrayList = speciesArrayList;
+        this.mVehiclesArrayList = vehiclesArrayList;
+        this.mStarshipsArrayList = starshipsArrayList;
+        this.mCreated = created;
+        this.mEdited = edited;
+        this.mUrl = url;
+        this.mImageId = imageId;
+
+    }
+
 
 
     public String getName() {
@@ -222,4 +256,21 @@ public class People implements Serializable {
     public void setmUrl(String url) {
         this.mUrl = url;
     }
+
+
+    public boolean hasImage(){
+
+        return mImageId != NO_IMAGE_PROVIDED;
+
+    }
+
+
+    public int getImageId(){
+
+        return mImageId;
+
+    }
+
+
+
 }

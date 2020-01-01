@@ -5,4 +5,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="star_wars_person_image_view_acc">star_wars_person_image</string>
+    <string name="name_people_text_view">Name</string>
+    <string name="gender_people_text_view">Gender</string>
 </resources>
