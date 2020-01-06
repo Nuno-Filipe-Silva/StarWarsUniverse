@@ -60,8 +60,6 @@ public class PeopleAdapter extends ArrayAdapter<People> {
         }
 
 
-
-
         TextView genderTextView = listItemView.findViewById(R.id.gender);
 
         genderTextView.setText(currentPeople.getGender());
@@ -70,24 +68,5 @@ public class PeopleAdapter extends ArrayAdapter<People> {
         return listItemView;
 
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
