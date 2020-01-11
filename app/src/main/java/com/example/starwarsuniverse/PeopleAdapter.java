@@ -31,7 +31,7 @@ public class PeopleAdapter extends ArrayAdapter<People> {
 
         View listItemView = convertView;
 
-        if(listItemView ==null){
+        if(listItemView == null){
 
             listItemView = LayoutInflater.from(getContext())
                     .inflate(R.layout.list_item_layout, parent, false);

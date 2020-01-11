@@ -9,7 +9,7 @@ public interface StarWarsApiConnection {
     @GET("people/")
     public Call<StarWarsList<People>> getAllPeople(@Query("page") int page);
 
-
-
+    @GET("films/")
+    public Call<StarWarsList<Film>> getAllFilms(@Query("page")int page);
 
 }

@@ -29,7 +29,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
             return new PeopleFragment();
 
-        } else {return new PeopleFragment();}
+        } else if(position == 1) {return new FilmsFragment();}
+
+        else {return new FilmsFragment();}
     }
 
     @Nullable
