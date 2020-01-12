@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -43,6 +44,25 @@ public View getView(int position, @Nullable View convertView, @NonNull ViewGroup
     TextView genderTextView = listItemView.findViewById(R.id.gender);
 
     genderTextView.setText(currentFilm.getReleaseDate().toString());
+
+
+    ImageView imageView = listItemView.findViewById(R.id.people_image_view);
+
+    if(currentFilm.hasImage()){
+
+        String mDrawableName = "anewhope";
+
+        imageView.setImageResource((R.drawable.anewhope));
+
+        imageView.setVisibility(View.VISIBLE);
+
+    } else {
+
+        imageView.setVisibility(View.GONE);
+
+    }
+
+
 
 
     return listItemView;

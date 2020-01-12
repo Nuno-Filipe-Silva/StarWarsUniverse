@@ -50,6 +50,10 @@ public class Film implements Serializable {
     @SerializedName("edited")
     private String mEdited;
 
+    private static final int NO_IMAGE_PROVIDED = -1;
+
+    private int mImageId = NO_IMAGE_PROVIDED;
+
     public Film(String title, int episodeId, String openingCrawl, String director,
                 String producer, Date releaseDate, ArrayList<String> species,
                 ArrayList<String> vehicles, ArrayList<String> starships,
@@ -70,6 +74,13 @@ public class Film implements Serializable {
         this.mUrl = url;
         this.mCreated = created;
         this.mEdited = edited;
+    }
+
+
+    public Film (int imageId) {
+
+        this.mImageId = imageId;
+
     }
 
     public String getTitle() {
@@ -182,6 +193,19 @@ public class Film implements Serializable {
 
     public void setEdited(String edited) {
         this.mEdited = edited;
+    }
+
+    public boolean hasImage(){
+
+        return mImageId != NO_IMAGE_PROVIDED;
+
+    }
+
+
+    public int getImageId(){
+
+        return mImageId;
+
     }
 
 }

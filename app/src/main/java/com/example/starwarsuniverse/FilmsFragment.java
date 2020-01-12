@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -24,6 +25,8 @@ public class FilmsFragment extends Fragment {
     ListView listView;
 
 
+
+
     public FilmsFragment() {
         // Required empty public constructor
     }
@@ -34,6 +37,8 @@ public class FilmsFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         final View rootView = inflater.inflate(R.layout.list_layout, container, false);
+
+        ImageView listItemView = rootView.findViewById(R.id.people_image_view);
 
         for(int i = 1; i < 2; i++){
 
@@ -49,6 +54,9 @@ public class FilmsFragment extends Fragment {
                     for(int k = 0; k < filmsStarWarsList.mResults.size();k++){
 
                         mFilmArrayList.add(filmsStarWarsList.getResults().get(k));
+
+
+
 
                         final FilmListAdapter filmListAdapter = new FilmListAdapter(getActivity(), mFilmArrayList);
 
