@@ -258,16 +258,75 @@ public class People implements Serializable {
     }
 
 
-    public boolean hasImage(){
+    public int getImageId() {
 
-        return mImageId != NO_IMAGE_PROVIDED;
-
-    }
+        String personName = mName;
 
 
-    public int getImageId(){
+        switch (personName) {
 
-        return mImageId;
+            case mANewHope:
+
+                int img = (R.drawable.anewhope);
+
+                return img;
+
+
+            case mTheEmpireStrikesBack:
+
+                int img2 = (R.drawable.the_empire_strikes_back);
+
+                return img2;
+
+
+            case mReturnOfTheJedi:
+
+                int img3 = (R.drawable.return_of_the_jedi);
+
+                return img3;
+
+
+            case mThePhantomMenace:
+
+                int img4 = (R.drawable.the_phantom_menace);
+
+                return img4;
+
+
+            case mAttackOfTheClones:
+
+                int img5 = (R.drawable.attack_of_the_clones);
+
+                return img5;
+
+
+            case mRevengeoftheSith:
+
+                int img6 = (R.drawable.revenge_of_the_sith);
+
+                return img6;
+
+            case mTheForceAwakens:
+
+                int img7 = (R.drawable.the_force_awakens);
+
+                return img7;
+
+
+            case mTheLastJedi:
+
+                int img8 = (R.drawable.the_last_jedi);
+
+                return img8;
+
+            default:
+
+                int img9 = (R.drawable.ic_launcher_foreground);
+
+                return img9;
+
+
+        }
 
     }
 
