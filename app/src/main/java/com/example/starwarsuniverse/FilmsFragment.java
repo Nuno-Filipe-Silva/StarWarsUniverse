@@ -56,8 +56,6 @@ public class FilmsFragment extends Fragment {
                         mFilmArrayList.add(filmsStarWarsList.getResults().get(k));
 
 
-
-
                         final FilmListAdapter filmListAdapter = new FilmListAdapter(getActivity(), mFilmArrayList);
 
                         listView.setAdapter(filmListAdapter);

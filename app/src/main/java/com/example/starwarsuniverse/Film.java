@@ -1,8 +1,11 @@
 package com.example.starwarsuniverse;
 
+import android.view.View;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -27,7 +30,7 @@ public class Film implements Serializable {
     private Date mReleaseDate;
 
     @SerializedName("species")
-    private ArrayList<String>mSpecies;
+    private ArrayList<String> mSpecies;
 
     @SerializedName("vehicles")
     private ArrayList<String> mVehicles;
@@ -52,13 +55,30 @@ public class Film implements Serializable {
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    private int mImageId = NO_IMAGE_PROVIDED;
+    private int mImageId;
+
+    final String mANewHope = "A New Hope";
+
+    final String mTheEmpireStrikesBack = "The Empire Strikes Back";
+
+    final String mReturnOfTheJedi = "Return of the Jedi";
+
+    final String mThePhantomMenace = "The Phantom Menace";
+
+    final String mAttackOfTheClones = "Attack of the Clones";
+
+    final String mRevengeoftheSith = "Revenge of the Sith";
+
+    final String mTheForceAwakens= "The Force Awakens";
+
+    final String mTheLastJedi = "The Last Jedi";
+
 
     public Film(String title, int episodeId, String openingCrawl, String director,
                 String producer, Date releaseDate, ArrayList<String> species,
                 ArrayList<String> vehicles, ArrayList<String> starships,
                 ArrayList<String> characters, ArrayList<String> planets,
-                String url, String created, String edited) {
+                String url, String created, String edited, int imageId) {
 
         this.mTitle = title;
         this.mEpisodeId = episodeId;
@@ -74,14 +94,9 @@ public class Film implements Serializable {
         this.mUrl = url;
         this.mCreated = created;
         this.mEdited = edited;
-    }
-
-
-    public Film (int imageId) {
-
         this.mImageId = imageId;
-
     }
+
 
     public String getTitle() {
         return mTitle;
@@ -124,11 +139,18 @@ public class Film implements Serializable {
     }
 
     public Date getReleaseDate() {
+
         return mReleaseDate;
     }
 
     public void setReleaseDate(Date releaseDate) {
+
         this.mReleaseDate = releaseDate;
+
+        DateFormat.getDateInstance(DateFormat.LONG).format(releaseDate);
+
+
+
     }
 
     public ArrayList<String> getSpecies() {
@@ -195,16 +217,79 @@ public class Film implements Serializable {
         this.mEdited = edited;
     }
 
-    public boolean hasImage(){
 
-        return mImageId != NO_IMAGE_PROVIDED;
+    public int getImageId() {
 
-    }
+        String filmTitle = mTitle;
 
 
-    public int getImageId(){
 
-        return mImageId;
+
+
+        switch (filmTitle){
+
+            case mANewHope:
+
+                int img = (R.drawable.anewhope);
+
+                return img;
+
+
+            case mTheEmpireStrikesBack:
+
+                int img2 = (R.drawable.the_empire_strikes_back);
+
+                return img2;
+
+
+            case mReturnOfTheJedi:
+
+                int img3 = (R.drawable.return_of_the_jedi);
+
+                return img3;
+
+
+            case mThePhantomMenace:
+
+                int img4 = (R.drawable.the_phantom_menace);
+
+                return img4;
+
+
+            case mAttackOfTheClones:
+
+                int img5 = (R.drawable.attack_of_the_clones);
+
+                return img5;
+
+
+            case mRevengeoftheSith:
+
+                int img6 = (R.drawable.revenge_of_the_sith);
+
+                return img6;
+
+            case mTheForceAwakens:
+
+                int img7 = (R.drawable.the_force_awakens);
+
+                return img7;
+
+
+            case mTheLastJedi:
+
+                int img8 = (R.drawable.the_last_jedi);
+
+                return img8;
+
+                default:
+
+                    int img9 = (R.drawable.ic_launcher_foreground);
+
+                    return img9;
+
+
+        }
 
     }
 
