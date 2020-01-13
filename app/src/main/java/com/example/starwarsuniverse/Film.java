@@ -1,7 +1,5 @@
 package com.example.starwarsuniverse;
 
-import android.view.View;
-
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
@@ -11,67 +9,46 @@ import java.util.Date;
 
 public class Film implements Serializable {
 
-    @SerializedName("title")
-    private String mTitle;
-
-    @SerializedName("episode_id")
-    private int mEpisodeId;
-
-    @SerializedName("opening_crawl")
-    private String mOpeningCrawl;
-
-    @SerializedName("director")
-    private String mDirector;
-
-    @SerializedName("producer")
-    private String mProducer;
-
-    @SerializedName("release_date")
-    private Date mReleaseDate;
-
-    @SerializedName("species")
-    private ArrayList<String> mSpecies;
-
-    @SerializedName("vehicles")
-    private ArrayList<String> mVehicles;
-
-    @SerializedName("starships")
-    private ArrayList<String> mStarships;
-
-    @SerializedName("characters")
-    private ArrayList<String> mCharacters;
-
-    @SerializedName("planets")
-    private ArrayList<String> mPlanets;
-
-    @SerializedName("url")
-    private String mUrl;
-
-    @SerializedName("created")
-    private String mCreated;
-
-    @SerializedName("edited")
-    private String mEdited;
-
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    private final String mANewHope = "A New Hope";
+    private final String mTheEmpireStrikesBack = "The Empire Strikes Back";
+    private final String mReturnOfTheJedi = "Return of the Jedi";
+    private final String mThePhantomMenace = "The Phantom Menace";
+    private final String mAttackOfTheClones = "Attack of the Clones";
+    private final String mRevengeoftheSith = "Revenge of the Sith";
+    private final String mTheForceAwakens = "The Force Awakens";
+    private final String mTheLastJedi = "The Last Jedi";
+
+    @SerializedName("title")
+    private String mTitle;
+    @SerializedName("episode_id")
+    private int mEpisodeId;
+    @SerializedName("opening_crawl")
+    private String mOpeningCrawl;
+    @SerializedName("director")
+    private String mDirector;
+    @SerializedName("producer")
+    private String mProducer;
+    @SerializedName("release_date")
+    private Date mReleaseDate;
+    @SerializedName("species")
+    private ArrayList<String> mSpecies;
+    @SerializedName("vehicles")
+    private ArrayList<String> mVehicles;
+    @SerializedName("starships")
+    private ArrayList<String> mStarships;
+    @SerializedName("characters")
+    private ArrayList<String> mCharacters;
+    @SerializedName("planets")
+    private ArrayList<String> mPlanets;
+    @SerializedName("url")
+    private String mUrl;
+    @SerializedName("created")
+    private String mCreated;
+    @SerializedName("edited")
+    private String mEdited;
     private int mImageId;
-
-    final String mANewHope = "A New Hope";
-
-    final String mTheEmpireStrikesBack = "The Empire Strikes Back";
-
-    final String mReturnOfTheJedi = "Return of the Jedi";
-
-    final String mThePhantomMenace = "The Phantom Menace";
-
-    final String mAttackOfTheClones = "Attack of the Clones";
-
-    final String mRevengeoftheSith = "Revenge of the Sith";
-
-    final String mTheForceAwakens= "The Force Awakens";
-
-    final String mTheLastJedi = "The Last Jedi";
 
 
     public Film(String title, int episodeId, String openingCrawl, String director,
@@ -150,7 +127,6 @@ public class Film implements Serializable {
         DateFormat.getDateInstance(DateFormat.LONG).format(releaseDate);
 
 
-
     }
 
     public ArrayList<String> getSpecies() {
@@ -223,10 +199,7 @@ public class Film implements Serializable {
         String filmTitle = mTitle;
 
 
-
-
-
-        switch (filmTitle){
+        switch (filmTitle) {
 
             case mANewHope:
 
@@ -282,11 +255,11 @@ public class Film implements Serializable {
 
                 return img8;
 
-                default:
+            default:
 
-                    int img9 = (R.drawable.ic_launcher_foreground);
+                int img9 = (R.drawable.ic_launcher_foreground);
 
-                    return img9;
+                return img9;
 
 
         }

@@ -25,8 +25,6 @@ public class FilmsFragment extends Fragment {
     ListView listView;
 
 
-
-
     public FilmsFragment() {
         // Required empty public constructor
     }
@@ -40,10 +38,10 @@ public class FilmsFragment extends Fragment {
 
         ImageView listItemView = rootView.findViewById(R.id.people_image_view);
 
-        for(int i = 1; i < 2; i++){
+        for (int i = 1; i < 2; i++) {
 
             Call<StarWarsList<Film>> starWarsListCall = new RetrofitConnection().starWarsApiConnection()
-                                                        .getAllFilms(i);
+                    .getAllFilms(i);
 
             starWarsListCall.enqueue(new Callback<StarWarsList<Film>>() {
                 @Override
@@ -51,7 +49,7 @@ public class FilmsFragment extends Fragment {
 
                     StarWarsList<Film> filmsStarWarsList = response.body();
 
-                    for(int k = 0; k < filmsStarWarsList.mResults.size();k++){
+                    for (int k = 0; k < filmsStarWarsList.mResults.size(); k++) {
 
                         mFilmArrayList.add(filmsStarWarsList.getResults().get(k));
 
