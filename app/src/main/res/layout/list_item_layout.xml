@@ -2,15 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="208dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:padding="1dp">
 
     <ImageView
         android:id="@+id/people_image_view"
         android:layout_width="140dp"
         android:layout_height="match_parent"
-        android:adjustViewBounds="false"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/star_wars_person_image_view_acc"
-        android:scaleType="fitXY" />
+        android:cropToPadding="true"
+        android:scaleType="centerCrop" />
 
 
     <LinearLayout

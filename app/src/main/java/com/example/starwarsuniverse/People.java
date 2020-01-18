@@ -240,6 +240,12 @@ public class People implements Serializable {
 
             return img1;
 
+        } else if (mName1.equalsIgnoreCase("ayla secura")) {
+
+            int img1 = R.drawable.aaylasecura;
+
+            return img1;
+
         } else if (mName1.equalsIgnoreCase("c-3po")) {
 
             int img1 = R.drawable.c3po;
@@ -289,9 +295,123 @@ public class People implements Serializable {
 
             return img1;
 
+        } else if (mName1.equalsIgnoreCase("ackbar")) {
+
+            int img1 = R.drawable.ackbar;
+
+            return img1;
+
         } else if (mName1.equalsIgnoreCase("anakin skywalker")) {
 
             int img1 = R.drawable.anakin;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("palpatine")) {
+
+            int img1 = R.drawable.palpatine;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("chewbacca")) {
+
+            int img1 = R.drawable.chewbacca;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("greedo")) {
+
+            int img1 = R.drawable.greedo;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("grievous")) {
+
+            int img1 = R.drawable.grievous;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("leia organa")) {
+
+            int img1 = R.drawable.leiaorgana;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("mace windu")) {
+
+            int img1 = R.drawable.macewindu;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("nute gunray")) {
+
+            int img1 = R.drawable.nategunray;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("obi wan kenobi")) {
+
+            int img1 = R.drawable.obiwan;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("sebulba")) {
+
+            int img1 = R.drawable.sebulba;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("watto")) {
+
+            int img1 = R.drawable.watto;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("wicket w. warrick")) {
+
+            int img1 = R.drawable.wicketwwarrick;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("wilhuff tarkin")) {
+
+            int img1 = R.drawable.wilhufftarkin;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("yoda")) {
+
+            int img1 = R.drawable.yoda;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("boba fett")) {
+
+            int img1 = R.drawable.bobafett;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("han solo")) {
+
+            int img1 = R.drawable.hansolo;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("general tarpals")) {
+
+            int img1 = R.drawable.generaltarpals;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("qui-gon jinn")) {
+
+            int img1 = R.drawable.quigonjinn;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("bib fortuna")) {
+
+            int img1 = R.drawable.bibfortuna;
 
             return img1;
 
