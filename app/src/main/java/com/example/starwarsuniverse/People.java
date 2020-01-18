@@ -11,68 +11,39 @@ import retrofit2.http.GET;
 
 public class People implements Serializable {
 
-@SerializedName("name")
-    private String mName;
-
-
-@SerializedName("height")
-    private String mHeight;
-
-
-@SerializedName("mass")
-    private String mMass;
-
-@SerializedName("hair_color")
-    private String mHairColor;
-
-@SerializedName("skin_color")
-    private String mSkinColor;
-
-
-@SerializedName("eye_color")
-    private String mEyeColor;
-
-
-@SerializedName("birth_year")
-    private String mBirthYear;
-
-
-@SerializedName("gender")
-    private String mGender;
-
-
-@SerializedName("homeworld")
-    private String mHomeworld;
-
-
-@SerializedName("films")
-    private ArrayList<String> mFilms;
-
-
-@SerializedName("species")
-    private ArrayList<String> mSpeciesArrayList;
-
-@SerializedName("vehicles")
-    private ArrayList<String> mVehiclesArrayList;
-
-@SerializedName("starships")
-    private ArrayList<String> mStarshipsArrayList;
-
-
-@SerializedName("created")
-    private String mCreated;
-
-
-@SerializedName("edited")
-    private String mEdited;
-
-
-@SerializedName("url")
-    private String mUrl;
-
-
     private static final int NO_IMAGE_PROVIDED = -1;
-
+    @SerializedName("name")
+    private String mName;
+    @SerializedName("height")
+    private String mHeight;
+    @SerializedName("mass")
+    private String mMass;
+    @SerializedName("hair_color")
+    private String mHairColor;
+    @SerializedName("skin_color")
+    private String mSkinColor;
+    @SerializedName("eye_color")
+    private String mEyeColor;
+    @SerializedName("birth_year")
+    private String mBirthYear;
+    @SerializedName("gender")
+    private String mGender;
+    @SerializedName("homeworld")
+    private String mHomeworld;
+    @SerializedName("films")
+    private ArrayList<String> mFilms;
+    @SerializedName("species")
+    private ArrayList<String> mSpeciesArrayList;
+    @SerializedName("vehicles")
+    private ArrayList<String> mVehiclesArrayList;
+    @SerializedName("starships")
+    private ArrayList<String> mStarshipsArrayList;
+    @SerializedName("created")
+    private String mCreated;
+    @SerializedName("edited")
+    private String mEdited;
+    @SerializedName("url")
+    private String mUrl;
     private int mImageId = NO_IMAGE_PROVIDED;
 
 
@@ -82,7 +53,7 @@ public class People implements Serializable {
                   ArrayList<String> vehiclesArrayList, ArrayList<String> starshipsArrayList,
                   String created, String edited, String url) {
 
-        
+
         this.mName = name;
         this.mHeight = height;
         this.mMass = mass;
@@ -128,7 +99,6 @@ public class People implements Serializable {
         this.mImageId = imageId;
 
     }
-
 
 
     public String getName() {
@@ -264,100 +234,78 @@ public class People implements Serializable {
         String mName1 = mName;
 
 
-            if(mName1.equalsIgnoreCase("luke skywalker")){
+        if (mName1.equalsIgnoreCase("luke skywalker")) {
 
-                int img1 = R.drawable.lukeskywalker;
+            int img1 = R.drawable.lukeskywalker;
 
-                return img1;
+            return img1;
 
-            } else if (mName1.equalsIgnoreCase("c-3po")){
+        } else if (mName1.equalsIgnoreCase("c-3po")) {
 
-                int img1 = R.drawable.c3po;
+            int img1 = R.drawable.c3po;
 
-                return img1;
+            return img1;
 
-            }
+        } else if (mName1.equalsIgnoreCase("lando calrissian")) {
 
-            else if (mName1.equalsIgnoreCase("lando calrissian")) {
+            int img1 = R.drawable.lando;
 
-                int img1 = R.drawable.lando;
+            return img1;
 
-                return img1;
+        } else if (mName1.equalsIgnoreCase("dooku")) {
 
-            }
+            int img1 = R.drawable.countdooku;
 
-            else if (mName1.equalsIgnoreCase("dooku")){
-
-                    int img1 = R.drawable.countdooku;
-
-                    return img1;
+            return img1;
 
 
+        } else if (mName1.equalsIgnoreCase("jar jar binks")) {
 
-            }
+            int img1 = R.drawable.jarjarbinks;
 
-            else if (mName1.equalsIgnoreCase("jar jar binks")){
+            return img1;
 
-                int img1 = R.drawable.jarjarbinks;
+        } else if (mName1.equalsIgnoreCase("bail prestor organa")) {
 
-                return img1;
+            int img1 = R.drawable.bailorgana;
 
-            }
+            return img1;
 
-            else if (mName1.equalsIgnoreCase("bail prestor organa")){
+        } else if (mName1.equalsIgnoreCase("darth vader")) {
 
-                int img1 = R.drawable.bailorgana;
+            int img1 = R.drawable.vader;
 
-                return img1;
+            return img1;
 
-            }
+        } else if (mName1.equalsIgnoreCase("darth maul")) {
 
-            else if (mName1.equalsIgnoreCase("darth vader")){
+            int img1 = R.drawable.darthmaul;
 
-                int img1 = R.drawable.vader;
+            return img1;
 
-                return img1;
+        } else if (mName1.equalsIgnoreCase("r2-d2")) {
 
-            }
+            int img1 = R.drawable.r2d2;
 
+            return img1;
 
-            else if (mName1.equalsIgnoreCase("darth maul")){
+        } else if (mName1.equalsIgnoreCase("anakin skywalker")) {
 
-                int img1 = R.drawable.darthmaul;
+            int img1 = R.drawable.anakin;
 
-                return img1;
+            return img1;
 
-            }
+        } else {
 
-            else if (mName1.equalsIgnoreCase("r2-d2")){
+            int img1 = R.drawable.ic_launcher_background;
 
-                int img1 = R.drawable.r2d2;
-
-                return img1;
-
-            }
-
-            else if (mName1.equalsIgnoreCase("anakin skywalker")){
-
-                int img1 = R.drawable.anakin;
-
-                return img1;
-
-            }
-
-
-
-            else {
-
-                int img1 = R.drawable.ic_launcher_background;
-
-                return img1;
-
-            }
+            return img1;
 
         }
 
     }
+
+}
 
 
 
