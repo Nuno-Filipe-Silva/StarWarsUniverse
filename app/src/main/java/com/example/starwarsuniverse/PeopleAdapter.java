@@ -47,17 +47,13 @@ public class PeopleAdapter extends ArrayAdapter<People> {
 
         ImageView imageView = listItemView.findViewById(R.id.people_image_view);
 
-        if(currentPeople.hasImage()){
+
 
             imageView.setImageResource(currentPeople.getImageId());
 
             imageView.setVisibility(View.VISIBLE);
 
-        } else {
 
-            imageView.setVisibility(View.GONE);
-
-        }
 
 
         TextView genderTextView = listItemView.findViewById(R.id.gender);

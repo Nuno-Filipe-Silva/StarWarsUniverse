@@ -1,5 +1,7 @@
 package com.example.starwarsuniverse;
 
+import android.graphics.drawable.Drawable;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
@@ -257,77 +259,28 @@ public class People implements Serializable {
         this.mUrl = url;
     }
 
+    public int getImageId() {
 
-   /* public int getImageId() {
+        String mName1 = mName;
 
-        return mImageId != NO_IMAGE_PROVIDED;
+
+            if(mName1.equalsIgnoreCase("luke skywalker")){
+
+                int img1 = R.drawable.lukeskywalker;
+
+                return img1;
+
+            } else {
+
+                int img1 = R.drawable.ic_launcher_background;
+
+                return img1;
+
+            }
+
+        }
 
     }
 
 
-    public int getImageId(){
 
-        return mImageId;
-
-                return img;
-
-
-            case mTheEmpireStrikesBack:
-
-                int img2 = (R.drawable.the_empire_strikes_back);
-
-                return img2;
-
-
-            case mReturnOfTheJedi:
-
-                int img3 = (R.drawable.return_of_the_jedi);
-
-                return img3;
-
-
-            case mThePhantomMenace:
-
-                int img4 = (R.drawable.the_phantom_menace);
-
-                return img4;
-
-
-            case mAttackOfTheClones:
-
-                int img5 = (R.drawable.attack_of_the_clones);
-
-                return img5;
-
-
-            case mRevengeoftheSith:
-
-                int img6 = (R.drawable.revenge_of_the_sith);
-
-                return img6;
-
-            case mTheForceAwakens:
-
-                int img7 = (R.drawable.the_force_awakens);
-
-                return img7;
-
-
-            case mTheLastJedi:
-
-                int img8 = (R.drawable.the_last_jedi);
-
-                return img8;
-
-            default:
-
-                int img9 = (R.drawable.ic_launcher_foreground);
-
-                return img9;
-
-
-        }
-
-    }*/
-
-}
