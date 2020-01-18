@@ -270,7 +270,84 @@ public class People implements Serializable {
 
                 return img1;
 
-            } else {
+            } else if (mName1.equalsIgnoreCase("c-3po")){
+
+                int img1 = R.drawable.c3po;
+
+                return img1;
+
+            }
+
+            else if (mName1.equalsIgnoreCase("lando calrissian")) {
+
+                int img1 = R.drawable.lando;
+
+                return img1;
+
+            }
+
+            else if (mName1.equalsIgnoreCase("dooku")){
+
+                    int img1 = R.drawable.countdooku;
+
+                    return img1;
+
+
+
+            }
+
+            else if (mName1.equalsIgnoreCase("jar jar binks")){
+
+                int img1 = R.drawable.jarjarbinks;
+
+                return img1;
+
+            }
+
+            else if (mName1.equalsIgnoreCase("bail prestor organa")){
+
+                int img1 = R.drawable.bailorgana;
+
+                return img1;
+
+            }
+
+            else if (mName1.equalsIgnoreCase("darth vader")){
+
+                int img1 = R.drawable.vader;
+
+                return img1;
+
+            }
+
+
+            else if (mName1.equalsIgnoreCase("darth maul")){
+
+                int img1 = R.drawable.darthmaul;
+
+                return img1;
+
+            }
+
+            else if (mName1.equalsIgnoreCase("r2-d2")){
+
+                int img1 = R.drawable.r2d2;
+
+                return img1;
+
+            }
+
+            else if (mName1.equalsIgnoreCase("anakin skywalker")){
+
+                int img1 = R.drawable.anakin;
+
+                return img1;
+
+            }
+
+
+
+            else {
 
                 int img1 = R.drawable.ic_launcher_background;
 
