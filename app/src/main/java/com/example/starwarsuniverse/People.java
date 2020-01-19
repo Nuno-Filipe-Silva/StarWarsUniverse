@@ -415,7 +415,111 @@ public class People implements Serializable {
 
             return img1;
 
-        } else {
+        } else if (mName1.equalsIgnoreCase("bb8")) {
+
+            int img1 = R.drawable.bb8;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("poe dameron")) {
+
+            int img1 = R.drawable.poedameron;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("rey")) {
+
+            int img1 = R.drawable.rey;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("kylo ren")) {
+
+            int img1 = R.drawable.kyloren;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("finn")) {
+
+            int img1 = R.drawable.finn;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("padmé amidala")) {
+
+            int img1 = R.drawable.padmeamidala;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("owen lars")) {
+
+            int img1 = R.drawable.owenlars;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("beru whitesun lars")) {
+
+            int img1 = R.drawable.beruwhitesunlars;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("r5d4")) {
+
+            int img1 = R.drawable.r5d4;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("biggs darklighter")) {
+
+            int img1 = R.drawable.biggsdarklighter;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("wedge antilles")) {
+
+            int img1 = R.drawable.wedgeantilles;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("jek tono porkins")) {
+
+            int img1 = R.drawable.jektonoporkins;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("ig-88")) {
+
+            int img1 = R.drawable.ig88;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("bossk")) {
+
+            int img1 = R.drawable.bossk;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("lobot")) {
+
+            int img1 = R.drawable.lobot;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("niennunb")) {
+
+            int img1 = R.drawable.niennunb;
+
+            return img1;
+
+        } else if (mName1.equalsIgnoreCase("finisvalorum")) {
+
+            int img1 = R.drawable.finisvalorum;
+
+            return img1;
+
+        }
+
+        else {
 
             int img1 = R.drawable.ic_launcher_background;
 
