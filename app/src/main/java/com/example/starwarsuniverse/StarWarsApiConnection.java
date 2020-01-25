@@ -12,4 +12,8 @@ public interface StarWarsApiConnection {
     @GET("films/")
     public Call<StarWarsList<Film>> getAllFilms(@Query("page")int page);
 
+    @GET("species/")
+    public Call<StarWarsList<Species>> getAllSpecies(@Query("page") int page);
+
+
 }
