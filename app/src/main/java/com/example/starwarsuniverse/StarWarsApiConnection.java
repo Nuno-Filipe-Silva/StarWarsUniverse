@@ -18,5 +18,8 @@ public interface StarWarsApiConnection {
     @GET("planets/")
     public Call<StarWarsList<Planet>> getAllPlanets (@Query("page") int page);
 
+    @GET("starships/")
+    public Call<StarWarsList<Starship>> getAllStarships(@Query("page") int page);
+
 
 }
