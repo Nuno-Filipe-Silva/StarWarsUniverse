@@ -37,6 +37,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
         else if(position == 4) {return new StarshipFragment();}
 
+        else if(position == 5) {return new VehicleFragment();}
+
+
         else {return new FilmsFragment();}
     }
 
@@ -64,6 +67,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
             return mContext.getString(R.string.category_starships);
 
+        } else if(position == 5){
+
+            return mContext.getString(R.string.category_vehicles);
+
         } else {
 
             return mContext.getString(R.string.category_films);
@@ -74,6 +81,6 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 6;
     }
 }

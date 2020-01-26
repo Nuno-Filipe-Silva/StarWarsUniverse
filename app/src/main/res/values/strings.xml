@@ -11,4 +11,5 @@
     <string name="category_species">Species</string>
     <string name="category_planets">Planets</string>
     <string name="category_starships">Starships</string>
+    <string name="category_vehicles">Vehicles</string>
 </resources>
